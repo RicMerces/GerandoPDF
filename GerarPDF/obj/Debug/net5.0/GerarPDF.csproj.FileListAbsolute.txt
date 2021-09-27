@@ -1,0 +1,16 @@
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\bin\Debug\net5.0\GerarPDF.exe
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\bin\Debug\net5.0\GerarPDF.deps.json
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\bin\Debug\net5.0\GerarPDF.runtimeconfig.json
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\bin\Debug\net5.0\GerarPDF.runtimeconfig.dev.json
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\bin\Debug\net5.0\GerarPDF.dll
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\bin\Debug\net5.0\ref\GerarPDF.dll
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\bin\Debug\net5.0\GerarPDF.pdb
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\GerarPDF.csproj.AssemblyReference.cache
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\GerarPDF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\GerarPDF.AssemblyInfoInputs.cache
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\GerarPDF.AssemblyInfo.cs
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\GerarPDF.csproj.CoreCompileInputs.cache
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\GerarPDF.dll
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\ref\GerarPDF.dll
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\GerarPDF.pdb
+C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\GerarPDF\obj\Debug\net5.0\GerarPDF.genruntimeconfig.cache
