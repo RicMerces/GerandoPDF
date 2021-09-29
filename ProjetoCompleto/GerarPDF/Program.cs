@@ -8,9 +8,13 @@ namespace GeradorDeArquivosEmPDF
         static List<Pessoa> pessoas = new List<Pessoa>();
 
         static void Main(string[] args) { 
-        
-
-            Console.ReadLine();
+            Console.WriteLine("Hello World");
+            DesserializarPessoas();
+            foreach(var p in pessoas)
+            {
+                Console.WriteLine($"{p.IdPessoa} - {p.Nome} {p.Sobrenome}");
+            }
+            
         }
 
         static void DesserializarPessoas()
