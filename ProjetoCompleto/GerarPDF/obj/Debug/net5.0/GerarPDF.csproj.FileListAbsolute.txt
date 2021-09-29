@@ -29,7 +29,6 @@ C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarP
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\GerarPDF.dll
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\ref\GerarPDF.dll
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\GerarPDF.pdb
-C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\itextsharp.dll
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\iTextSharp.LGPLv2.Core.dll
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\BouncyCastle.Crypto.dll
@@ -39,3 +38,27 @@ C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarP
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.csproj.CopyComplete
 C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.genruntimeconfig.cache
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\GerarPDF.exe
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\GerarPDF.deps.json
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\GerarPDF.runtimeconfig.json
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\GerarPDF.runtimeconfig.dev.json
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\GerarPDF.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\ref\GerarPDF.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\GerarPDF.pdb
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\iTextSharp.LGPLv2.Core.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.csproj.AssemblyReference.cache
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.AssemblyInfoInputs.cache
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.AssemblyInfo.cs
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.csproj.CoreCompileInputs.cache
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.csproj.CopyComplete
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\ref\GerarPDF.dll
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.pdb
+C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\obj\Debug\net5.0\GerarPDF.genruntimeconfig.cache

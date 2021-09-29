@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ar3gsASiu8MPGXpdDK6yfgBB0ABm4gCfkBXWbrjGo+v0bXXokTtg+iuYnDr+8G8iTAATL8yimu6GkNvGIkcvhw==",
+  "dgSpecHash": "ESmjKTeJ9IcBs2FVvOpmBJvsHMJLkCEJq93ToQwNoYZ3Od0YW81Y18uOfopQghjucNu4Gt30sYu8hwfT6aVYoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ricardo\\Desktop\\Trabalho\\Estudando C#\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj",
+  "projectFilePath": "C:\\Users\\ricardo\\Desktop\\Trabalho\\EstudandoCSharp\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ricardo\\.nuget\\packages\\itextsharp.lgplv2.core\\1.7.4\\itextsharp.lgplv2.core.1.7.4.nupkg.sha512",
     "C:\\Users\\ricardo\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

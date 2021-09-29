@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = GerarPDF
-build_property.ProjectDir = C:\Users\ricardo\Desktop\Trabalho\Estudando C#\GerandoPDF\ProjetoCompleto\GerarPDF\
+build_property.ProjectDir = C:\Users\ricardo\Desktop\Trabalho\EstudandoCSharp\GerandoPDF\ProjetoCompleto\GerarPDF\

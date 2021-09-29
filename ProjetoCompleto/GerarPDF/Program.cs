@@ -2,6 +2,7 @@
 using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -15,10 +16,7 @@ namespace GeradorDeArquivosEmPDF
         static void Main(string[] args) { 
 
             DesserializarPessoas();
-            foreach(var p in pessoas)
-            {
-                Console.WriteLine($"{p.IdPessoa} - {p.Nome} {p.Sobrenome}");
-            }
+            GerarRelatorioEmPDF(100);
             
         }
 
@@ -45,7 +43,50 @@ namespace GeradorDeArquivosEmPDF
                 var nomeArquivo = $"pessoas.{DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss")}";
                 var arquivo = new FileStream(nomeArquivo, FileMode.Create);
                 var writer = PdfWriter.GetInstance(pdf, arquivo);
+                pdf.Open();
 
+                var fonteBase = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252, false);
+
+                //Adição de titulo 
+                var fonteParagrafo = new iTextSharp.text.Font(fonteBase, 32, iTextSharp.text.Font.NORMAL, BaseColor.Black);
+                var titulo = new Paragraph("Relatorio de Pessoas\n\n", fonteParagrafo);
+                titulo.Alignment = Element.ALIGN_LEFT;
+                pdf.Add(titulo);
+
+                pdf.Close();
+                arquivo.Close();
+
+               
+
+                //Adição da imagem
+                var caminhoImagem = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "img\\youtube.png");
+                if (File.Exists(caminhoImagem))
+                {
+                    iTextSharp.text.Image logo = iTextSharp.text.Image.GetInstance(caminhoImagem);
+                    float razaoAlturaLargura = logo.Width / logo.Height;
+                    float alturaLogo = 32;
+                    float larguraLogo = alturaLogo * razaoAlturaLargura;
+                    logo.ScaleToFit(larguraLogo, alturaLogo);
+                    var margemEsquerda = pdf.PageSize.Width - pdf.RightMargin - larguraLogo;
+                    var margemTopo = pdf.PageSize.Height - pdf.TopMargin - 54;
+                    logo.SetAbsolutePosition(margemEsquerda, margemTopo);
+                    writer.DirectContent.AddImage(logo, false);
+                }
+
+                pdf.Close();
+                arquivo.Close();
+
+                //abre o PDF no visualizador padrão
+                var caminhoPDF = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, nomeArquivo);
+                if (File.Exists(caminhoPDF))
+                {
+                    Process.Start(new ProcessStartInfo()
+                    {
+                        Arguments = $"/c start {caminhoPDF}",
+                        FileName = "cmd.exe",
+                        CreateNoWindow = true
+                    });
+                }
             }
 
         }

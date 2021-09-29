@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\ProjetoCompleto",
-    "\\ProjetoCompleto\\GerarPDF"
+    "\\ProjetoCompleto\\GerarPDF",
+    "\\ProjetoCompleto\\GerarPDF\\bin",
+    "\\ProjetoCompleto\\GerarPDF\\bin\\Debug",
+    "\\ProjetoCompleto\\GerarPDF\\bin\\Debug\\net5.0"
   ],
-  "SelectedNode": "\\ProjetoCompleto\\GerarPDF\\Program.cs",
+  "SelectedNode": "\\ProjetoCompleto",
   "PreviewInSolutionExplorer": false
 }

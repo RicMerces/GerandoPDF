@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ricardo\\Desktop\\Trabalho\\Estudando C#\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj": {}
+    "C:\\Users\\ricardo\\Desktop\\Trabalho\\EstudandoCSharp\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ricardo\\Desktop\\Trabalho\\Estudando C#\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj": {
+    "C:\\Users\\ricardo\\Desktop\\Trabalho\\EstudandoCSharp\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ricardo\\Desktop\\Trabalho\\Estudando C#\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj",
+        "projectUniqueName": "C:\\Users\\ricardo\\Desktop\\Trabalho\\EstudandoCSharp\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj",
         "projectName": "GerarPDF",
-        "projectPath": "C:\\Users\\ricardo\\Desktop\\Trabalho\\Estudando C#\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj",
+        "projectPath": "C:\\Users\\ricardo\\Desktop\\Trabalho\\EstudandoCSharp\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\GerarPDF.csproj",
         "packagesPath": "C:\\Users\\ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricardo\\Desktop\\Trabalho\\Estudando C#\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\obj\\",
+        "outputPath": "C:\\Users\\ricardo\\Desktop\\Trabalho\\EstudandoCSharp\\GerandoPDF\\ProjetoCompleto\\GerarPDF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
