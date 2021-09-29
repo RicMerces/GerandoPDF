@@ -1,5 +1,10 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text.Json;
 
 namespace GeradorDeArquivosEmPDF
 {
@@ -8,7 +13,7 @@ namespace GeradorDeArquivosEmPDF
         static List<Pessoa> pessoas = new List<Pessoa>();
 
         static void Main(string[] args) { 
-            Console.WriteLine("Hello World");
+
             DesserializarPessoas();
             foreach(var p in pessoas)
             {
@@ -24,9 +29,25 @@ namespace GeradorDeArquivosEmPDF
                 using (var sr = new StreamReader("pessoas.json"))
                 {
                     var dados = sr.ReadToEnd();
-                    pessoas = JsonSerializer.Deserialize(dados, typeof(list<Pessoa>) as List<Pessoa>);
+                    pessoas = JsonSerializer.Deserialize(dados, typeof(List<Pessoa>)) as List<Pessoa>;
                 }
             }
+        }
+
+        static void GerarRelatorioEmPDF (int qtdePessoas)
+        {
+            var pessoasSelecionadas = pessoas.Take(qtdePessoas).ToList();
+            if (pessoasSelecionadas.Count > 0)
+            {
+                //Configurar do documento PDF
+                var pxPorMm = 72 / 25.2F;
+                var pdf = new Document(PageSize.A4, 15 * pxPorMm, 15 * pxPorMm, 15 * pxPorMm, 20 * pxPorMm);
+                var nomeArquivo = $"pessoas.{DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss")}";
+                var arquivo = new FileStream(nomeArquivo, FileMode.Create);
+                var writer = PdfWriter.GetInstance(pdf, arquivo);
+
+            }
+
         }
     }
 }
