@@ -49,14 +49,9 @@ namespace GeradorDeArquivosEmPDF
 
                 //Adição de titulo 
                 var fonteParagrafo = new iTextSharp.text.Font(fonteBase, 32, iTextSharp.text.Font.NORMAL, BaseColor.Black);
-                var titulo = new Paragraph("Relatorio de Pessoas\n\n", fonteParagrafo);
+                var titulo = new Paragraph("Dados de Usuarios\n\n", fonteParagrafo);
                 titulo.Alignment = Element.ALIGN_LEFT;
                 pdf.Add(titulo);
-
-                pdf.Close();
-                arquivo.Close();
-
-               
 
                 //Adição da imagem
                 var caminhoImagem = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "img\\youtube.png");
@@ -73,8 +68,28 @@ namespace GeradorDeArquivosEmPDF
                     writer.DirectContent.AddImage(logo, false);
                 }
 
+                //Adição de Tabela
+                var tabela = new PdfPTable(5);
+                tabela.DefaultCell.BorderWidth = 0;
+                tabela.WidthPercentage = 100;
+
+                //Adição das celulas de titulos das colunas
+                var fonteCelula = new iTextSharp.text.Font(fonteBase, 12, iTextSharp.text.Font.NORMAL, BaseColor.Black);
+                var celula = new PdfPCell(new Phrase("Codigo", fonteCelula));
+                celula.HorizontalAlignment = pdf.ALIGN_LEFT;
+                celula.VerticalAlignment = pdf.ALIGN_MIDDLE;
+                celula.Border = 0;
+                celula.BorderWidthBottom = 1;
+                celula.FixedHeight = 25;
+
+                pdf.Add(tabela);
+
+
                 pdf.Close();
                 arquivo.Close();
+
+               
+
 
                 //abre o PDF no visualizador padrão
                 var caminhoPDF = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, nomeArquivo);
