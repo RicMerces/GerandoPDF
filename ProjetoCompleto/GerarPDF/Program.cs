@@ -71,20 +71,25 @@ namespace GeradorDeArquivosEmPDF
 
                 //Adição de Tabela
                 var tabela = new PdfPTable(5);
+                float[] larguraColunas = { 0.6f, 2f, 1.5f, 1f, 1f };
+                tabela.SetWidths(larguraColunas);
                 tabela.DefaultCell.BorderWidth = 0;
                 tabela.WidthPercentage = 100;
 
+
+
+
+
                 //Adição das celulas de titulos das colunas
-                CriarCelula();
-
+                CriarCelula(tabela, "Codigo", PdfCell.ALIGN_CENTER, true);
+                CriarCelula(tabela, "Nome", PdfCell.ALIGN_LEFT, true);
+                CriarCelula(tabela, "Profissão", PdfCell.ALIGN_CENTER, true);
+                CriarCelula(tabela, "Salário", PdfCell.ALIGN_CENTER, true);
+                CriarCelula(tabela, "Empregada", PdfCell.ALIGN_CENTER, true);
                 pdf.Add(tabela);
-
 
                 pdf.Close();
                 arquivo.Close();
-
-
-
 
                 //abre o PDF no visualizador padrão
                 var caminhoPDF = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, nomeArquivo);
@@ -114,13 +119,13 @@ namespace GeradorDeArquivosEmPDF
             {
                 estilo = iTextSharp.text.Font.ITALIC;
             }
-
+            
 
 
 
             var fonteCelula = new iTextSharp.text.Font(fonteBase, 12, iTextSharp.text.Font.NORMAL, BaseColor.Black);
-            var celula = new PdfPCell(new Phrase("Codigo", fonteCelula));
-            celula.HorizontalAlignment = PdfPCell.ALIGN_LEFT;
+            var celula = new PdfPCell(new Phrase(texto, fonteCelula));
+            celula.HorizontalAlignment = alinhamentoHorz;
             celula.VerticalAlignment = PdfPCell.ALIGN_MIDDLE;
             celula.Border = 0;
             celula.BorderWidthBottom = 1;
