@@ -12,6 +12,7 @@ namespace GeradorDeArquivosEmPDF
     class Program
     {
         static List<Pessoa> pessoas = new List<Pessoa>();
+        static BaseFont fonteBase = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252, false);
 
         static void Main(string[] args) { 
 
@@ -45,7 +46,7 @@ namespace GeradorDeArquivosEmPDF
                 var writer = PdfWriter.GetInstance(pdf, arquivo);
                 pdf.Open();
 
-                var fonteBase = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252, false);
+
 
                 //Adição de titulo 
                 var fonteParagrafo = new iTextSharp.text.Font(fonteBase, 32, iTextSharp.text.Font.NORMAL, BaseColor.Black);
@@ -74,13 +75,7 @@ namespace GeradorDeArquivosEmPDF
                 tabela.WidthPercentage = 100;
 
                 //Adição das celulas de titulos das colunas
-                var fonteCelula = new iTextSharp.text.Font(fonteBase, 12, iTextSharp.text.Font.NORMAL, BaseColor.Black);
-                var celula = new PdfPCell(new Phrase("Codigo", fonteCelula));
-                celula.HorizontalAlignment = pdf.ALIGN_LEFT;
-                celula.VerticalAlignment = pdf.ALIGN_MIDDLE;
-                celula.Border = 0;
-                celula.BorderWidthBottom = 1;
-                celula.FixedHeight = 25;
+                CriarCelula();
 
                 pdf.Add(tabela);
 
@@ -88,7 +83,7 @@ namespace GeradorDeArquivosEmPDF
                 pdf.Close();
                 arquivo.Close();
 
-               
+
 
 
                 //abre o PDF no visualizador padrão
@@ -104,6 +99,33 @@ namespace GeradorDeArquivosEmPDF
                 }
             }
 
+        }
+
+        private static void CriarCelula(PdfPTable tabela, string texto, int alinhamentoHorz = PdfPCell.ALIGN_LEFT, bool negrito = false, bool italico = false, int tamanhoFonte = 12, int altura = 25)
+        {
+            int estilo = iTextSharp.text.Font.NORMAL;
+            if(negrito && italico)
+            {
+                estilo = iTextSharp.text.Font.BOLDITALIC;
+            }else if (negrito)
+            {
+                estilo = iTextSharp.text.Font.BOLD;
+            }else if (italico)
+            {
+                estilo = iTextSharp.text.Font.ITALIC;
+            }
+
+
+
+
+            var fonteCelula = new iTextSharp.text.Font(fonteBase, 12, iTextSharp.text.Font.NORMAL, BaseColor.Black);
+            var celula = new PdfPCell(new Phrase("Codigo", fonteCelula));
+            celula.HorizontalAlignment = PdfPCell.ALIGN_LEFT;
+            celula.VerticalAlignment = PdfPCell.ALIGN_MIDDLE;
+            celula.Border = 0;
+            celula.BorderWidthBottom = 1;
+            celula.FixedHeight = 25;
+            tabela.AddCell(celula);   
         }
     }
 }
