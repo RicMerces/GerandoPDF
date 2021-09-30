@@ -76,7 +76,14 @@ namespace GeradorDeArquivosEmPDF
                 tabela.DefaultCell.BorderWidth = 0;
                 tabela.WidthPercentage = 100;
 
-
+                foreach (var p in pessoasSelecionadas)
+                {
+                    CriarCelula(tabela, p.IdPessoa.ToString("D6"), PdfPCell.ALIGN_CENTER);
+                    CriarCelula(tabela, $"{p.Nome} {p.Sobrenome}");
+                    CriarCelula(tabela, p.Profissao.Nome, PdfPCell.ALIGN_CENTER);
+                    CriarCelula(tabela, p.salario.ToString("C2"), PdfPCell.ALIGN_RIGHT);
+                    CriarCelula(tabela, p.Empregado ? "Sim" : "Não", PdfPCell.ALIGN_CENTER);
+                }
 
 
 
